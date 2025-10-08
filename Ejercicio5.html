@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Funcion para manipular el DOM con document.getElementById</title>
+    </head>
+    <body>
+        <script>
+            function mostrarEnElemento(idElemento, mensaje){
+                document.getElementById(idElemento).innerText = mensaje;
+            }
+        </script>
+    </body>
+</html>
+1. Crea una función llamada mostrarEnElemento que reciba dos parámetros:
+○ idElemento: el id del elemento HTML donde se mostrará el mensaje.
+○ mensaje: el texto que quieres mostrar.
+2. Dentro de la función, usa document.getElementById(idElemento) para
+seleccionar el elemento y luego cambia su contenido (por ejemplo, con .innerText
+o .innerHTML) para mostrar el mensaje.
+3. Modifica la función restar que creaste antes para que en lugar de imprimir el
+resultado por consola, llame a mostrarEnElemento y le pase el id "resultado"
+y el resultado de la resta.
+4. En tu archivo HTML, asegúrate de tener una etiqueta con el id resultado donde se
+mostrará el mensaje, por ejemplo:
+
+<div id="resultado"></div>
+
+Prueba la función restar con dos números y verifica que el resultado se muestra dentro
+del elemento con id resultado en la página web.
