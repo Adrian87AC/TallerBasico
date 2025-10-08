@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GameXperience Store — Neon UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* (Todo tu CSS ya está aquí, omitido para brevedad, pero es el mismo que compartiste completo) */
+    /* Pegarlo aquí si estás creando un archivo desde cero */
+  </style>
+</head>
+<body>
+  <div class="bgfx" aria-hidden="true"></div>
+
+  <!-- ======= Header ======= -->
+  <header>
+    <div class="wrap">
+      <div class="topbar">
+        <label for="nav-toggle" class="hamburger" aria-label="Abrir menú">☰</label>
+        <div class="brand" aria-label="GameXperience">
+          <div class="logo">
+            <img src="logo.png" alt="Logo GameXperience" width="42" height="42" />
+          </div>
+          <span>GameXperience</span>
+        </div>
+        <input type="checkbox" id="nav-toggle" />
+        <form class="search" role="search" aria-label="Buscar productos">
+          <input type="search" placeholder="Buscar juegos, mandos…" aria-label="Buscar" />
+          <button type="button">Buscar</button>
+        </form>
+        <div class="actions">
+          <a class="pill" href="#">Login</a>
+          <a class="pill cart" href="#" aria-label="Carrito"><span>🛒</span><span class="badge" aria-label="2 artículos">2</span></a>
+        </div>
+      </div>
+      <nav class="main" aria-label="Navegación principal">
+        <div class="menu">
+          <a class="active" href="#">Inicio</a>
+          <a href="#">Catálogo</a>
+          <a href="#">Videojuegos</a>
+          <a href="#">Accesorios</a>
+          <a href="#">Ofertas</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======= Contenido ======= -->
+  <main>
+    <div class="wrap">
+      <!-- Filtros -->
+      <aside class="filters" aria-label="Filtros del catálogo">
+        <h3>Filtros</h3>
+        <div class="fbox">
+          <strong>Plataforma</strong>
+          <label><input type="checkbox" /> PlayStation</label>
+          <label><input type="checkbox" /> Xbox</label>
+          <label><input type="checkbox" /> Nintendo Switch</label>
+          <label><input type="checkbox" /> PC</label>
+        </div>
+        <div class="fbox">
+          <strong>Categoría</strong>
+          <label><input type="checkbox" /> Videojuegos</label>
+          <label><input type="checkbox" /> Mandos</label>
+          <label><input type="checkbox" /> Teclados</label>
+          <label><input type="checkbox" /> Auriculares</label>
+        </div>
+        <div class="fbox">
+          <strong>Precio máximo</strong>
+          <input class="range" type="range" min="0" max="100" value="60" aria-label="Rango de precio" />
+        </div>
+      </aside>
+
+      <!-- Productos -->
+      <section class="content">
+        <div class="section-title">
+          <h2>Catálogo destacado</h2>
+          <div class="meta">12 resultados</div>
+        </div>
+
+        <div class="grid" aria-label="Listado de productos de ejemplo">
+          <!-- Producto 1 -->
+          <article class="card">
+            <div class="thumb">🎮</div>
+            <div class="body">
+              <div class="title">Elden Ring</div>
+              <div class="tags"><span>PS5</span> · <span>PEGI 16</span></div>
+              <div class="price">59,99€</div>
+              <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+          </article>
+
+          <!-- Producto 2 -->
+          <article class="card">
+            <div class="thumb">⚔️</div>
+            <div class="body">
+              <div class="title">God of War</div>
+              <div class="tags"><span>PS5</span> · <span>PEGI 18</span></div>
+              <div class="price">49,99€</div>
+              <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+          </article>
+
+          <!-- Producto 3 -->
+          <article class="card">
+            <div class="thumb">🛡️</div>
+            <div class="body">
+              <div class="title">Zelda: BOTW</div>
+              <div class="tags"><span>Switch</span> · <span>PEGI 12</span></div>
+              <div class="price">39,99€</div>
+              <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+          </article>
+
+          <!-- Producto 4 -->
+          <article class="card">
+            <div class="thumb">✨</div>
+            <div class="body">
+              <div class="title">Final Fantasy XVI</div>
+              <div class="tags"><span>PS5</span> · <span>PEGI 16</span></div>
+              <div class="price">69,99€</div>
+              <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+          </article>
+
+          <!-- Producto 5 -->
+          <article class="card">
+            <div class="thumb">🧩</div>
+            <div class="body">
+              <div class="title">It Takes Two</div>
+              <div class="tags"><span>Xbox</span> · <span>PEGI 12</span></div>
+              <div class="price">29,99€</div>
+              <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+          </article>
+
+          <!-- Producto 6 -->
+          <article class="card">
+            <div class="thumb">⌨️</div>
+            <div class="body">
+              <div class="title">Teclado Mecánico RGB</div>
+              <div class="tags"><span>Accesorio</span> · <span>RGB</span></div>
+              <div class="price">89,99€</div>
+              <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+          </article>
+
+          <!-- Producto 7 -->
+          <article class="card">
+            <div class="thumb">🎧</div>
+            <div class="body">
+              <div class="title">Auriculares Pro</div>
+              <div class="tags"><span>Accesorio</span> · <span>7.1</span></div>
+              <div class="price">79,99€</div>
+              <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+          </article>
+
+          <!-- Producto 8 -->
+          <article class="card">
+            <div class="thumb">🕹️</div>
+            <div class="body">
+              <div class="title">Mando Inalámbrico Elite</div>
+              <div class="tags"><span>Xbox</span> · <span>Bluetooth</span></div>
+              <div class="price">119,99€</div>
+              <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="foot">
+      <div>
+        <h4>GameXperience</h4>
+        <ul>
+          <li>Sobre nosotros</li>
+          <li>Blog</li>
+          <li>Prensa</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+          <li>Envíos y devoluciones</li>
+          <li>Atención al cliente</li>
+          <li>Política de privacidad</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>support@gamexperience.com</li>
+          <li>+34 600 123 456</li>
+          <li>Madrid, España</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">&copy; 2025 GameXperience Store. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>
