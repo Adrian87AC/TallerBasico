@@ -17,8 +17,8 @@ function getData() {
         {"id": 2, "nombre": "Encimera Granito", "precio": 299.00, "categoria_slug": "cocinas", "descripcion": "Encimera resistente de granito natural."},
         {"id": 3, "nombre": "Lavabo Suspendido", "precio": 159.50, "categoria_slug": "banos", "descripcion": "Lavabo con instalación suspendida y sifón oculto."},
         {"id": 4, "nombre": "Mampara Ducha 120", "precio": 220.00, "categoria_slug": "banos", "descripcion": "Mampara corredera templada 6mm."},
-        {"id": 5, "nombre": "Lavadora 8kg A+++", "precio": 399.90, "categoria_slug": "electrohogar", "descripcion": "Lavadora eficiente con 15 programas."},
-        {"id": 6, "nombre": "Gremlin", "precio": 41.90, "categoria_slug": "monstruos", "descripcion": "Monstruo adorable para hacerte compañía.", "img": "https://example.com/gremlin.jpg"}
+        {"id": 5, "nombre": "Lavadora 8kg A+++", "precio": 399.90, "categoria_slug": "electrohogar", "descripcion": "Lavadora eficiente con 15 programas.", "img": "https://sevillafc.es/el-club/historia/contenido/el-escudo.png"},
+        {"id": 6, "nombre": "Gremlin", "precio": 41.90, "categoria_slug": "monstruos", "descripcion": "Monstruo adorable para hacerte compañía.", "img": "https://sevillafc.es/el-club/historia/contenido/el-escudo.png"}
       ]
     }';
     return json_decode($json, true);
